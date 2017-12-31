@@ -378,7 +378,7 @@ public class PhoneSwitcher extends Handler {
         }
     }
 
-    private int phoneIdForRequest(NetworkRequest netRequest) {
+    public int phoneIdForRequest(NetworkRequest netRequest) {
         NetworkSpecifier specifier = netRequest.networkCapabilities.getNetworkSpecifier();
         int subId;
 
